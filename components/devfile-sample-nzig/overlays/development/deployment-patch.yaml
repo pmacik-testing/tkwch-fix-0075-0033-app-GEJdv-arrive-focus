@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-nzig
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0033-tenant/tkwch-fix-0075-0033-app/devfile-sample-nzig@sha256:1c69971da527c5b2e2e4a154f51b94db471c34423b139acb215820b4dd346255
+        name: my-nodejs
+        resources: {}
+status: {}
